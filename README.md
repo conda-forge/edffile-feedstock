@@ -11,6 +11,18 @@ Summary: Reader for EDF files part of the PyMCA x-ray fluorescence toolkit
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/edffile-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/edffile-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/edffile-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/edffile-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/edffile-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/edffile-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/edffile/badges/version.svg)](https://anaconda.org/conda-forge/edffile)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/edffile/badges/downloads.svg)](https://anaconda.org/conda-forge/edffile)
+
 Installing edffile
 ==================
 
@@ -66,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/edffile-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/edffile-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/edffile-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/edffile-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/edffile-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/edffile-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/edffile/badges/version.svg)](https://anaconda.org/conda-forge/edffile)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/edffile/badges/downloads.svg)](https://anaconda.org/conda-forge/edffile)
 
 
 Updating edffile-feedstock
