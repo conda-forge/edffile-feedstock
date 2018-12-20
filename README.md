@@ -16,9 +16,8 @@ Summary: Reader for EDF files part of the PyMCA x-ray fluorescence toolkit
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/edffile-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/edffile-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/edffile-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/edffile-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/edffile-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/edffile-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/edffile-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/edffile-feedstock)
 
 Current release info
 ====================
