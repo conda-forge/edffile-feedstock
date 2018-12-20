@@ -1,44 +1,44 @@
 {% set version = "5.0.0" %}
 
 package:
-    name: edffile
-    version: {{ version }}
+  name: edffile
+  version: {{ version }}
 
 source:
-    path: src
+  path: src
 
 build:
-    number: 1000
-    script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1000
+  noarch: python
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-    build:
-        - python
-        - setuptools
-        - numpy
-
-    run:
-        - python
-        - numpy
+  host:
+    - python
+    - pip
+    - numpy
+  run:
+    - python
+    - numpy
 
 test:
-    imports:
-        - EdfFile
+  imports:
+    - EdfFile
 
 about:
-    # Long term goal is to have the src/ folder in this recipe as a stand-alone
-    # project on github. This file is part of another, much larger project. It
-    # is broken out so that users do not have to install a full GUI simply to
-    # get Edf file format I/O.
-    home: https://github.com/vasole/pymca/blob/master/PyMca5/PyMcaIO/EdfFile.py
-    license: MIT
-    summary: 'Reader for EDF files part of the PyMCA x-ray fluorescence toolkit'
+  # Long term goal is to have the src/ folder in this recipe as a stand-alone
+  # project on github. This file is part of another, much larger project. It
+  # is broken out so that users do not have to install a full GUI simply to
+  # get Edf file format I/O.
+  home: https://github.com/vasole/pymca/blob/master/PyMca5/PyMcaIO/EdfFile.py
+  license: MIT
+  summary: 'Reader for EDF files part of the PyMCA x-ray fluorescence toolkit'
 
 extra:
-    recipe-maintainers:
-        - dgursoy
-        - decarlof
-        - ericdill
-        - licode
-        - ravescovi
-        - tacaswell
+  recipe-maintainers:
+    - dgursoy
+    - decarlof
+    - ericdill
+    - licode
+    - ravescovi
+    - tacaswell
