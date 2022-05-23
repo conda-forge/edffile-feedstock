@@ -14,11 +14,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=2.7,<4
     - pip
     - numpy
   run:
-    - python
+    - python >=2.7,<4
     - numpy
 
 test:
