@@ -33,6 +33,7 @@ about:
   home: https://github.com/vasole/pymca/blob/master/PyMca5/PyMcaIO/EdfFile.py
   license: MIT
   summary: 'Reader for EDF files part of the PyMCA x-ray fluorescence toolkit'
+  license_file: LICENSE
 
 extra:
   recipe-maintainers:
