@@ -1,3 +1,4 @@
+import os
 from setuptools import setup
 
 setup(
@@ -7,5 +8,5 @@ setup(
     name = 'edffile',
     install_requires = ('numpy'),
     license="MIT",
-    version = '5.0.1',
+    version = os.environ['PKG_VERSION'],
 )
