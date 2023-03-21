@@ -1,3 +1,4 @@
+import os
 from setuptools import setup
 
 setup(
@@ -5,7 +6,7 @@ setup(
     description = 'Read EDF files',
     py_modules = ['EdfFile'],
     name = 'edffile',
-    install_requires = ('python', 'numpy'),
+    install_requires = ('numpy'),
     license="MIT",
-    version = '5.0.0',
+    version = os.environ['PKG_VERSION'],
 )
