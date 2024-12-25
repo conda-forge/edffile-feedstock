@@ -8,20 +8,22 @@ source:
   path: src
 
 build:
-  number: 1000
+  number: 1001
   noarch: python
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
-    - python
+    - python {{ python_min }}
     - pip
     - numpy
   run:
-    - python
+    - python >={{ python_min }}
     - numpy
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - EdfFile
 
