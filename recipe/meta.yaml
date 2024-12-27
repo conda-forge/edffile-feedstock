@@ -1,4 +1,4 @@
-{% set version = "5.0.0" %}
+{% set version = "5.9.3" %}
 
 package:
   name: edffile
@@ -6,13 +6,13 @@ package:
 
 source:
   - url: https://github.com/vasole/pymca/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: 1196b1efd18f3ae0a327e7491adf5ecaf20098065429d798899a8381491505eb
+    sha256: 6d8f1f34e1f3ac437239e2cf4e6c47f7de6d077cae765eb0ca2e48c131416f82
     folder: upstream
   - path: src
     folder: src
 
 build:
-  number: 1002
+  number: 0
   noarch: python
   script:
     - cp upstream/PyMca5/PyMcaIO/EdfFile.py src/
