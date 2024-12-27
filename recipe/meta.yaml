@@ -12,7 +12,7 @@ source:
     folder: src
 
 build:
-  number: 1001
+  number: 1002
   noarch: python
   script:
     - cp upstream/PyMca5/PyMcaIO/EdfFile.py src/
@@ -20,17 +20,19 @@ build:
 
 requirements:
   host:
-    - python >=2.7,<4
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=2.7,<4
+    - python >={{ python_min }},<4
     - numpy
   run_constrained:
     # EdfFile tries to import modules from pymca5
     - {{ pin_compatible('pymca5', lower_bound=version) }}
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - EdfFile
 
