@@ -1,4 +1,4 @@
-{% set version = "5.9.3" %}
+{% set version = "5.9.4" %}
 
 package:
   name: edffile
@@ -6,7 +6,7 @@ package:
 
 source:
   - url: https://github.com/vasole/pymca/archive/refs/tags/v{{ version }}.tar.gz
-    sha256: 6d8f1f34e1f3ac437239e2cf4e6c47f7de6d077cae765eb0ca2e48c131416f82
+    sha256: 36dfc2421a1087cc65c612f3b8c5e53e43b0ef12e2830cacd3c8d0b5f7052752
     folder: upstream
   - path: src
     folder: src
